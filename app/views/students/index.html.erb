@@ -4,6 +4,6 @@
   <% end %>
   
   <% @students.each do |post| %>
-  <div><%= link_to student.title, post_path(student) %></div>
+  <div><%= link_to student.to_s, post_path(student) %></div>
   <% end %>
 </div>
