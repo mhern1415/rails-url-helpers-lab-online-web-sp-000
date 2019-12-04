@@ -4,7 +4,11 @@ class StudentsController < ApplicationController
   def index
     @students = Student.all
   end
-
+  def activate
+    student = set_student
+    student.toggle_active!
+    redirect_to action: "show", id: params[:id]
+  end
   def show
   end
 
