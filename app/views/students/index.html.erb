@@ -3,7 +3,7 @@
     <div><%= student.first_name + " " + student.last_name %></div>
   <% end %>
   
-  <% @students.each do |post| %>
+  <% @students.each do |student| %>
   <div><%= link_to student.to_s, post_path(student) %></div>
   <% end %>
 </div>
